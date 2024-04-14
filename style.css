@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-image {
+  width: 35%;
+  height: 100vh; /* Set the height to 100vh to cover the full viewport height */
+  overflow: hidden; /* Hide any overflowing content */
+  position: relative;
+}
+
+.img-container {
+  width: 100%; /* Occupy full width of the .background-image container */
+  height: 100%; /* Occupy full height of the .background-image container */
+}
+
+img.background {
+  width: 100%;
+  height: 100%; /* Occupy full height of the .img-container */
+  object-fit: cover; /* Cover the entire .img-container without stretching */
+}
+.logo {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.logo-text {
+  font-family: 'Norse-Bold';
+  color: #fff;
+  font-size: 90px;
+  align-self: center;
+}
+
+.main-content {
+  width: 65%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.description {
+  padding-bottom: 20px;
+  padding-left: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  width: 80%;
+  margin-top: 150px;
+}
+
+.description p:first-child {
+  padding-bottom: 40px;
+}
+
+.main-form {
+  padding: 20px 45px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-self: center;
+}
+
+.main-form > div {
+  display: flex;
+}
+
+.main-form > div > div {
+  margin-right: 4rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 20px;
+  border: 1px solid rgb(195, 195, 195);
+  box-shadow: none;
+}
+
+.form-text {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+button.submit {
+  width: 200px;
+  height: 40px;
+  background-color: #596D48;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(90, 87, 87);
+  margin-top: 20px;
+  margin-left: 45px;
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
