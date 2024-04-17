@@ -10,7 +10,7 @@
 <body>
   <div class="body-container">
 
-    <div class="background-image">
+    <div class="background-left">
       <div class="logo">
         <img src="odin-logo.png" alt="odin logo" class="logo-img">
         <div class="logo-text">ODIN</div>
@@ -57,10 +57,12 @@
           <div>
             <label for="password">PASSWORD</label>
             <input type="password" id="password" name="password" required>
+            <div class="empty-warning error"></div>
           </div>
           <div>
             <label for="confirm-password">CONFIRM-PASSWORD</label>
             <input type="password" id="confirm-password" name="confirm-password" required>
+            <div class="match-warning error"></div>
           </div>
         </div>
       </div>
@@ -68,5 +70,7 @@
       <p class="already">Already have an account? <a href="#">Log in</a></p>
     </form>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
