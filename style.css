@@ -248,6 +248,7 @@ button.submit {
 
   input {
     width: 80%;
+    font-size: 14px;
   }
 
   .name > div{
