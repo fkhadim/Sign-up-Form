@@ -11,6 +11,10 @@
   margin: 0;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 .body-container {
   display: flex;
   flex-direction: row;
@@ -191,9 +195,14 @@ button.submit {
    align-items: center;
   }
 
-  .main-form > div > div {
-    margin-right: 30px;
+  .main-form > div {
+    width: 100%;
+    justify-content: center;
+  }
 
+  .main-form > div > div {
+    margin: 0;
+    width: 50%;
   }
 
   .description {
@@ -220,16 +229,43 @@ button.submit {
 
   .submit-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    align-self: center;
+    text-align: center;
   }
 
   button.submit {
     font-size: 16px;
+    margin: 0;
+    margin-top: 20px;
   }
 
   .already {
     font-size: 16px;
+    margin-left: 0;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .name > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .password-details > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
